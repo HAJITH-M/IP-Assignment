@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            display: flex;
+            overflow: hidden;
+        }
+
+        fieldset {
+            width: 400px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 100%;
+            box-shadow: 0 0 10px rgb(255, 0, 0);
+
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        form{
+            margin-top: 40px;
+            color: white;
+
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        select, input.inp {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+       
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Vehicle Form</title>
+</head>
+<body bgcolor="black">
+   
+
+    <form action="./card_details.html" method="get">
+        <fieldset>
+            <legend>Vehicle Information</legend>
+
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input class="inp" type="text" id="vehicleNumber" name="vehicleNumber" required>
+
+            <label for="modelNumber">Model Number:</label>
+            <select class="inp" id="modelNumber" name="modelNumber" required>
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model3">Model 3</option>
+            </select>
+
+            <label for="color">Color:</label>
+            <select class="inp" id="color" name="color" required>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input class="inp" type="number" id="amount" name="amount" required>
+
+            <label for="accountNo">Account Number:</label>
+            <input class="inp" type="text" id="accountNo" name="accountNo" required>
+
+            <label>Payment Type:</label>
+            <label>
+                <input type="radio" name="payment_method" value="credit_card" required>
+                Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment_method" value="debit_card" required>
+                Debit Card
+            </label>
+            
+            <button>Proceed</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
