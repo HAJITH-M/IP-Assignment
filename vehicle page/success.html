@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-container::before {
+            content: '\2714'; /* Unicode checkmark character */
+            font-size: 50px;
+            color: #28a745;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        h1 {
+            color: #28a745;
+        }
+
+        p {
+            color: #333;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="success-container">
+        <h1>Success!</h1>
+        <p>Your action was successful.</p>
+        <p><a href="#">Go back</a></p>
+    </section>
+
+</body>
+</html>
